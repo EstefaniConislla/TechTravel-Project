@@ -1,7 +1,17 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./Routes";
+import GlobalStyle from "./Styles/global";
 
 function App() {
-  return <h1>Tech Travel</h1>;
+  return (
+    <>
+      <BrowserRouter>
+        <Routing />
+      </BrowserRouter>
+      <GlobalStyle />
+    </>
+  );
 }
 
 export default App;
