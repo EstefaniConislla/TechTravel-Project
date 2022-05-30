@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { MdAddShoppingCart } from "react-icons/md";
+import { Container, List, Unit } from "./style";
+import api from "../../Services/api";
+import CartContext from "../../Context/Cart";
 
 function Home() {
   const [traveList, setTraveList] = useState([]);

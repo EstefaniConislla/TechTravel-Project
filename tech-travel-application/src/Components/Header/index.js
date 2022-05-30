@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.svg";
-import CartContext from "../../context/cart";
+import logo from "../../Assets/logo.svg";
+import CartContext from "../../Context/Cart";
 
-import { Container, HeaderContainer, Cart } from "./styles";
+import { Container, HeaderContainer, Cart } from "./style";
 
 function Header() {
   const { setState, state } = useContext(CartContext);
